@@ -3,17 +3,14 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 def TrialDivision(n):
-    '''Standard Implementation'''
-    a=0 # set counter for numper of iterations
-    # implement iteration for each value of p between 2 and root n
+    a=0
     for p in range (2, int(math.sqrt(n))+1):
-        a=a+1 # keep count of number of iterations
-        if n%p==0: # check whether n is divisible by each p by taking the modulus
-            return p,a # if it is return factor p and a, number of iterations
+        a=a+1
+        if n%p==0:
+            return p,a 
     return 'is prime',a
 
 def TrialDivision_odd(n):
-    '''For Odd Numbers'''
     a=1
     if n%2==0:
         return 2,a
