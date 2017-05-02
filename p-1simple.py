@@ -54,8 +54,6 @@ poll = []
 note = []
 primes = prime_gen(250001)
 
-print primes
-
 for n in range (3,250001,2):
     if not n in primes:
         p,a= Pollard(n)
@@ -64,14 +62,11 @@ for n in range (3,250001,2):
         poll.append(a)
         if n==p:
             note.append(n)
-
-print note
   
 plt.title("Pollard's p-1 Method without Even or Prime Numbers")
 plt.ylabel('Number of Iterations')
 plt.xlabel('Value of N')
 plt.plot(N, poll, 'mp')
 
-#plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
-plt.savefig('ppppp2.png')
+plt.savefig('p-1b.png')
 plt.show()
