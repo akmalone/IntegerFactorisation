@@ -51,20 +51,15 @@ def TDFtogethersqrt(s):
             TDF.append(a)
     return N, TDF
 
-
 N1, TDF1, = TDFtogether(85)
-print 'yolo'
 N2, TDF2, = TDFtogether(115)
-print 'whey'
 N3, TDF3, = TDFtogether(175)
-print 'hi'
 N4, TDF4, = TDFtogethersqrt(2.5)
 print max(TDF4)
 N5, TDF5, = TDFtogethersqrt(1.85)
 print max(TDF5)
 N6, TDF6, = TDFtogethersqrt(1.25)
 print max(TDF6)
-
         
 plt.subplot(2, 3, 1)
 plt.xticks(rotation=60)
