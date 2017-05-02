@@ -59,3 +59,4 @@ plt.plot(N, (15.0+np.asarray(N)/15.0)/2.0-np.sqrt(N), lw=2, c='violet', label='p
 plt.legend(loc=0, borderaxespad=0.)
 
 plt.savefig('Fresult2.png',bbox_inches='tight')
+plt.show()
