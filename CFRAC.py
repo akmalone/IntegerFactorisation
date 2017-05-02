@@ -179,16 +179,11 @@ primes250=prime_gen(250)
 primes25=primes250[:bisect.bisect_left(primes250,25)]
 primes10=primes25[:bisect.bisect_left(primes25,10)]
 
-print primes250
-print primes25
-print primes10
-
 while len(N)<1000:
     n=random.randint(1,5000000)
     if TrialDivision(n,primes10)==None:
         if not n in N:
             N.append(n)
-            print len(N)
             ans10=CFRAC(n,10,primes10)
             ans25=CFRAC(n,10,primes25)
             ans250=CFRAC(n,10,primes250)
@@ -239,16 +234,5 @@ plt.yticks(visible=False)
 plt.ylim(0,250)
 
 plt.tight_layout()
-plt.savefig('CFRACresultttttttt.png')
+plt.savefig('CFRACresult.png')
 plt.show()
-
-
-
-
-
-
-
-
-
-
-
