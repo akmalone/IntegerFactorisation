@@ -46,7 +46,6 @@ def astage(a,i,inter,B):
                 return p,i
     return p,i
     
-
 def Pollard(n,inter,B):
     i=0
     p,i=astage(2,i,inter,B)
@@ -75,8 +74,6 @@ primes = prime_gen(100001)
 
 interval_primes20=primes[bisect.bisect(primes,20):bisect.bisect(primes,150)]
 interval_primes50=primes[bisect.bisect(primes,50):bisect.bisect(primes,150)]
- 
-print interval_primes20
 
 for n in range (3,100001,2):
     if not n in primes:
@@ -114,5 +111,5 @@ plt.xticks(rotation=30)
 plt.ylim(0,70)
 
 plt.suptitle("Pollard's p-1 Method Second Stage")
-plt.savefig('p2ndnoa7.png')
+plt.savefig('p-1s2.png')
 plt.show()
