@@ -97,8 +97,6 @@ notepoll = []
 
 primes = prime_gen(100001)
 
-print primes
-
 for n in range (3,100001,2):
     if not n in primes:
         p,a,hi = Pollard(n)
@@ -144,7 +142,6 @@ plt.plot(N13, poll13, 'cp', label='Found when a=13')
 plt.plot(N17, poll17, 'p', c='orange', label='Found when a=17')
 plt.plot(N19, poll19, 'kp', label='Found when a=19')
 
-
-plt.legend(loc=0)
+plt.legend(loc=2)
 plt.savefig('p235791.png',bbox_inches='tight')
 plt.show()
