@@ -96,7 +96,6 @@ plt.plot(N, np.sqrt(N)/(np.log(np.sqrt(N))-B), lw=5, c='yellow')
 plt.plot([], [], lw=5, c='black', label='Corresponding Upper Bound')
 plt.legend(loc=0, borderaxespad=0.)
 
-
 plt.ylim(ymin=0)
 plt.savefig('TDresult.png',bbox_inches='tight')
 plt.show()
