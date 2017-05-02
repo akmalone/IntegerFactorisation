@@ -57,8 +57,6 @@ poll2 = []
 note = []
 primes = prime_gen(501)
 
-print primes
-
 for n in range (2,501):
     p,a = Pollard(n)
     if n==p:
@@ -74,8 +72,6 @@ for n in range (2,501):
         p1.append(p)
         poll.append(a)
 
-print Np
-
 print list(set(note)-set(primes))
 print list(set(primes)-set(note))
   
@@ -88,5 +84,5 @@ plt.plot(N2, poll2, 'cp', label = 'Even Numbers')
 plt.plot(N, poll, 'mp', label = 'Composite Numbers')
 
 plt.legend(loc=0, borderaxespad=0.)
-plt.savefig('p5.png',bbox_inches='tight')
+plt.savefig('p-1a.png',bbox_inches='tight')
 plt.show()
