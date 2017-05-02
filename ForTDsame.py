@@ -2,7 +2,6 @@ import math
 import numpy as np
 import matplotlib.pyplot as plt
 
-
 def TrialDivision(n):
     a=0
     for x in range (2, int(math.sqrt(n))+1):
@@ -10,7 +9,6 @@ def TrialDivision(n):
         if n%x==0:
             return x,a
     return 'is prime',a
-
 
 def Fermat(n):
     x = math.ceil(math.sqrt(n))
@@ -33,7 +31,6 @@ Fbigger = []
 NF = []
 Fsmaller = []
 TDbigger = []
-
 
 for n in range (1,20001,2):
     p,a = TrialDivision(n)
