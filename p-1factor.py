@@ -55,8 +55,6 @@ note = []
 notepoll = []
 primes = prime_gen(100001)
 
-print primes
-
 for n in range (3,100001,2):
     if not n in primes:
         p,a= Pollard(n)
@@ -76,5 +74,5 @@ plt.plot(N, poll, 'bp', label='Factor Found')
 plt.plot(note, notepoll, 'rp', label='No Factor Found')
 
 plt.legend(loc=0, borderaxespad=0.)
-plt.savefig('ppp1.png',bbox_inches='tight')
+plt.savefig('p-1c.png',bbox_inches='tight')
 plt.show()
